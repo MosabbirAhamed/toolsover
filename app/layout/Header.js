@@ -4,19 +4,20 @@ import { FcGoogle } from 'react-icons/fc';
 
 const Header = () => {
   return (
-    <header className="bg-white">
+    <header className="bg-white border-b border-slate-300">
       <div className="container ">
 
-        <div className="flex items-center justify-between py-3">
+        <div className="flex items-center justify-between py-4">
+
+          <div>
+            <h1 className="text-4xl text-main">
+              <Link href="/">
+                TollsOver
+              </Link>
+            </h1>
+          </div>
           <div>
             <ul className="flex transition-all items-center gap-10 ">
-              <li className="">
-                <Link href="/">
-
-                  <img className=" w-[200px] h-[70px]" src="https://www.futurepedia.io/_next/static/media/futurepedia.85a9d4b9.svg" alt="" />
-
-                </Link>
-              </li>
               <li className="text-gray text-[15px] hover:text-main font-semibold  cursor-pointer">
                 <Link href="/favourites">
                   Favourites
